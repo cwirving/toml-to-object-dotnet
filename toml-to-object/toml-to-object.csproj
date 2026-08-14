@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <RootNamespace>TomlToObject</RootNamespace>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>Carl W. Irving</Authors>
+        <Description>Addition to the directory-to-object package to support loading of TOML files in directories.</Description>
+        <Company>Carl W. Irving</Company>
+        <Product>TomlToObject</Product>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="directory-to-object" Version="0.3.1" />
+      <PackageReference Include="Tomlyn.Signed" Version="2.10.1" />
+    </ItemGroup>
+
+</Project>

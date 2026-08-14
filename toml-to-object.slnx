@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="toml-to-object.tests/toml-to-object.tests.csproj" />
+  <Project Path="toml-to-object/toml-to-object.csproj" />
+</Solution>
