@@ -1,0 +1,4 @@
+another = "value"
+
+[nested]
+key2 = "value2"

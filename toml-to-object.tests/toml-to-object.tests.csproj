@@ -5,14 +5,30 @@
         <RootNamespace>toml_to_object.tests</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <AssemblyOriginatorKeyFile>..\toml-to-object.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="TUnit" Version="1.65.0" />
+        <PackageReference Include="TUnit" Version="1.65.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\toml-to-object\toml-to-object.csproj" />
+        <ProjectReference Include="..\toml-to-object\toml-to-object.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\toml-to-object.snk">
+            <Link>toml-to-object.snk</Link>
+        </None>
     </ItemGroup>
 
 </Project>

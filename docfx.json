@@ -1,0 +1,32 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": ".",
+          "files": ["toml-to-object/*.csproj"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["index.md", "docs/**/*.{md,yml}", "api/**/*.{md,yml}"],
+        "exclude": ["_site/**"]
+      }
+    ],
+    "resource": ["*.png"],
+    "output": "_site",
+    "template": ["default", "modern"],
+    "globalMetadata": {
+      "_appName": "toml-to-object",
+      "_appTitle": "toml-to-object",
+      "_disableContribution": true,
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}

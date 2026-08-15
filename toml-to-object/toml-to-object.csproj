@@ -6,22 +6,35 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Authors>Carl W. Irving</Authors>
-        <Description>Addition to the directory-to-object package to support loading of TOML files in directories.</Description>
+        <Description>Extension for the directory-to-object package to support loading of TOML files in directories.</Description>
         <Company>Carl W. Irving</Company>
         <Product>TomlToObject</Product>
+        <AssemblyOriginatorKeyFile>..\toml-to-object.snk</AssemblyOriginatorKeyFile>
+        <SignAssembly>true</SignAssembly>
+
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="directory-to-object" Version="0.3.1" />
-      <PackageReference Include="Tomlyn.Signed" Version="2.10.1" />
+        <PackageReference Include="directory-to-object" Version="0.3.1"/>
+        <PackageReference Include="Tomlyn.Signed" Version="2.10.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\toml-to-object.snk">
+            <Link>toml-to-object.snk</Link>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>
