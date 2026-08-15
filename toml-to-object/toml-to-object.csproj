@@ -6,12 +6,16 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Authors>Carl W. Irving</Authors>
+        <Title>Toml-To-Object</Title>
         <Description>Extension for the directory-to-object package to support loading of TOML files in directories.</Description>
-        <Company>Carl W. Irving</Company>
         <Product>TomlToObject</Product>
         <AssemblyOriginatorKeyFile>..\toml-to-object.snk</AssemblyOriginatorKeyFile>
         <SignAssembly>true</SignAssembly>
-
+        <PackageId>toml-to-object</PackageId>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageProjectUrl>https://github.com/cwirving/toml-to-object-dotnet</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/cwirving/toml-to-object-dotnet.git</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
